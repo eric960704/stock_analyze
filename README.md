@@ -14,4 +14,7 @@
 ![image](https://github.com/eric960704/stock_analyze/blob/main/%E4%BB%8B%E7%B4%B912.png)
 ![image](https://github.com/eric960704/stock_analyze/blob/main/%E4%BB%8B%E7%B4%B913.png)
 ![image](https://github.com/eric960704/stock_analyze/blob/main/%E4%BB%8B%E7%B4%B914.png)
+![image](https://github.com/eric960704/stock_analyze/blob/main/%E4%BB%8B%E7%B4%B915.png)
+![image](https://github.com/eric960704/stock_analyze/blob/main/%E4%BB%8B%E7%B4%B916.png)
+![image](https://github.com/eric960704/stock_analyze/blob/main/%E4%BB%8B%E7%B4%B917.png)
 
