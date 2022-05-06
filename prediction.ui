@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>prediction</class>
+ <widget class="QWidget" name="prediction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>817</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>642</x>
+     <y>440</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>關閉</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;預測系統&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="uplabel2pre">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>上漲</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="uplist2pre">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>671</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(236, 236, 236);
+border-radius:15px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="downlabel2pre">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>260</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>下跌</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicre3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>290</y>
+     <width>671</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(236, 236, 236);
+border-radius:15px;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>130</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>130</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>130</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>130</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton5">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>130</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton6">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>130</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton7">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton8">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton9">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton10">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton11">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buyButton12">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton1">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton5">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton6">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton7">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton8">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton9">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton10">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton11">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sellButton12">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>360</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>821</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(&quot;predictionimage.jpeg&quot;);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="prediction_date">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>exitButton</zorder>
+  <zorder>label_2</zorder>
+  <zorder>uplabel2pre</zorder>
+  <zorder>uplist2pre</zorder>
+  <zorder>downlabel2pre</zorder>
+  <zorder>graphicre3</zorder>
+  <zorder>buyButton1</zorder>
+  <zorder>buyButton2</zorder>
+  <zorder>buyButton3</zorder>
+  <zorder>buyButton4</zorder>
+  <zorder>buyButton5</zorder>
+  <zorder>buyButton6</zorder>
+  <zorder>buyButton7</zorder>
+  <zorder>buyButton8</zorder>
+  <zorder>buyButton9</zorder>
+  <zorder>buyButton10</zorder>
+  <zorder>buyButton11</zorder>
+  <zorder>buyButton12</zorder>
+  <zorder>sellButton1</zorder>
+  <zorder>sellButton2</zorder>
+  <zorder>sellButton3</zorder>
+  <zorder>sellButton4</zorder>
+  <zorder>sellButton5</zorder>
+  <zorder>sellButton6</zorder>
+  <zorder>sellButton7</zorder>
+  <zorder>sellButton8</zorder>
+  <zorder>sellButton9</zorder>
+  <zorder>sellButton10</zorder>
+  <zorder>sellButton11</zorder>
+  <zorder>sellButton12</zorder>
+  <zorder>prediction_date</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

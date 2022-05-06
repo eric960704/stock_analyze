@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>backtest</class>
+ <widget class="QWidget" name="backtest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1722</width>
+    <height>929</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label3re1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>84</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>選擇股票</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tilde3">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>210</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>~</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="back_ans">
+   <property name="geometry">
+    <rect>
+     <x>1470</x>
+     <y>250</y>
+     <width>231</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;微軟正黑體&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close_button">
+   <property name="geometry">
+    <rect>
+     <x>1590</x>
+     <y>870</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}</string>
+   </property>
+   <property name="text">
+    <string>關閉</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelre38_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>165</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>選擇策略參數</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LongMaText">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>164</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>長均線</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tilde1">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>173</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>~</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="backDate">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>210</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+QDateEdit:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2010</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelre32">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>128</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>選擇策略</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="shart_ma_low">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>166</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+QLineEdit:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tall_ma_low">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>166</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+QLineEdit:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="frontDate">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>210</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+QDateEdit:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2010</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelre38">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>選擇回測日期</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_back">
+   <property name="geometry">
+    <rect>
+     <x>1470</x>
+     <y>870</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}</string>
+   </property>
+   <property name="text">
+    <string>開始回測</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="shart_ma_high">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>166</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+QLineEdit:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tilde2">
+   <property name="geometry">
+    <rect>
+     <x>463</x>
+     <y>163</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>~</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tall_ma_high">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>166</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+QLineEdit:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Strategy">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>123</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+
+QComboBox:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>請選擇策略</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>MA(均線)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>RSI(相對強弱指標)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Boiling(布林通道)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>MACD(指數平滑異同移動平均線)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>KD(隨機指標)</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>250</y>
+     <width>1411</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0.7);</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1411</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QGraphicsView" name="graphicsView"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="PriceGraph_Button">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>197</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>損益圖</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>20</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>回測系統</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1721</width>
+     <height>931</height>
+    </rect>
+   </property>
+   <property name="accessibleDescription">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(&quot;backtestimage.jpg&quot;);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="stock_number">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+border-radius: 6px; /* 边框圆角 */
+padding-left: 5px; /* 文本距离左边界有5px */
+}
+QLineEdit:hover { 
+border: 1px solid #298DFF;
+border-radius: 6px;
+padding-left: 5px; /* 文本距离左边界有5px */
+background-color: #F2F2F2;
+color: #298DFF;
+selection-background-color: #298DFF;
+selection-color: #F2F2F2;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ShortMaText">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>166</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string>短均線</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PricePoint_btn">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>197</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微軟正黑體</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>買賣點</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>label3re1</zorder>
+  <zorder>tilde3</zorder>
+  <zorder>back_ans</zorder>
+  <zorder>close_button</zorder>
+  <zorder>labelre38_2</zorder>
+  <zorder>LongMaText</zorder>
+  <zorder>tilde1</zorder>
+  <zorder>backDate</zorder>
+  <zorder>labelre32</zorder>
+  <zorder>shart_ma_low</zorder>
+  <zorder>tall_ma_low</zorder>
+  <zorder>frontDate</zorder>
+  <zorder>labelre38</zorder>
+  <zorder>start_back</zorder>
+  <zorder>shart_ma_high</zorder>
+  <zorder>tilde2</zorder>
+  <zorder>tall_ma_high</zorder>
+  <zorder>Strategy</zorder>
+  <zorder>widget</zorder>
+  <zorder>PriceGraph_Button</zorder>
+  <zorder>label</zorder>
+  <zorder>stock_number</zorder>
+  <zorder>ShortMaText</zorder>
+  <zorder>PricePoint_btn</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

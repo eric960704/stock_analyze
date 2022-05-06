@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1115</width>
+    <height>787</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>150</y>
+      <width>431</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微軟正黑體</family>
+      <pointsize>36</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white
+</string>
+    </property>
+    <property name="text">
+     <string>股票系統</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backtest_ui_Btn">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>340</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微軟正黑體</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}</string>
+    </property>
+    <property name="text">
+     <string>回測系統</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="prediction_ui_btn">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>420</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微軟正黑體</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}</string>
+    </property>
+    <property name="text">
+     <string>預測系統</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="descripe_ui_btn">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>500</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微軟正黑體</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#6699CC;
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+border:2px solid #DEF748;
+background:#66A6FF;
+}</string>
+    </property>
+    <property name="text">
+     <string>簡介</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>110</y>
+      <width>441</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(0,0,0,0.7);
+border-radius:15px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1121</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(&quot;homeimage.jpeg&quot;);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <zorder>frame_2</zorder>
+   <zorder>frame</zorder>
+   <zorder>backtest_ui_Btn</zorder>
+   <zorder>prediction_ui_btn</zorder>
+   <zorder>descripe_ui_btn</zorder>
+   <zorder>title</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resorce.qrc"/>
+ </resources>
+ <connections/>
+</ui>
